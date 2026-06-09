@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Restaurante Rong Hua · Cozinha chinesa autêntica em Oeiras</title>
+<meta name="description" content="Restaurante Rong Hua — cozinha chinesa autêntica em Oeiras. Comer no local, take-away, entregas e reservas." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<template id="__bundler_thumbnail" data-bg-color="#6e1411">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#6e1411"/>
+    <text x="600" y="430" font-family="serif" font-size="300" font-weight="700" fill="#ddbd78" text-anchor="middle">荣华</text>
+    <text x="600" y="560" font-family="serif" font-size="70" font-style="italic" fill="#f4ece0" text-anchor="middle">Rong Hua</text>
+  </svg>
+</template>
+
+<div class="site">
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="brand" aria-label="Restaurante Rong Hua — início">
+      <span class="brand-lantern" aria-hidden="true">
+        <svg viewBox="0 0 48 66" fill="none">
+          <line x1="24" y1="0" x2="24" y2="6" stroke="#d8a13f" stroke-width="2.2" stroke-linecap="round"/>
+          <ellipse cx="24" cy="30" rx="18" ry="20" fill="#c0241f"/>
+          <path d="M24 10c-8 5-8 35 0 40M24 10c8 5 8 35 0 40M15 30h18" stroke="rgba(0,0,0,.16)" stroke-width="1.3" fill="none"/>
+          <ellipse cx="24" cy="30" rx="18" ry="20" stroke="#9c1c18" stroke-width="1.4" fill="none"/>
+          <rect x="13" y="8" width="22" height="6" rx="3" fill="#d8a13f"/>
+          <rect x="13" y="46" width="22" height="6" rx="3" fill="#d8a13f"/>
+          <line x1="24" y1="52" x2="24" y2="58" stroke="#d8a13f" stroke-width="2"/>
+          <path d="M24 58l-3.5 8M24 58v8M24 58l3.5 8" stroke="#d8a13f" stroke-width="1.7" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">Rong Hua</span>
+        <span class="brand-sub">Restaurante Chinês</span>
+      </span>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+  </header>
+
+  <!-- mobile drawer -->
+  <div class="drawer" id="drawer">
+    <nav class="drawer-panel">
+      <div class="drawer-head">
+        <span class="word">荣华 Rong Hua</span>
+        <button class="drawer-close" id="drawerClose" aria-label="Fechar menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <a href="#especialidades" class="js-nav">Especialidades</a>
+      <a href="#casa" class="js-nav">A Nossa Casa</a>
+      <a href="#avaliacoes" class="js-nav">Avaliações</a>
+      <a href="#takeaway" class="js-nav">Take-away &amp; Entregas</a>
+      <a href="#visite" class="js-nav">Visite-nos</a>
+      <div class="drawer-foot">
+        <a href="tel:+351214415668">+351 21 441 5668</a><br/>
+        Av. Dr. Francisco Sá Carneiro 9B, Oeiras
+      </div>
+    </nav>
+  </div>
+
+  <span id="top"></span>
+
+  <!-- ===================== HERO — storefront ===================== -->
+  <section class="hero">
+    <img class="hero-bg" src="assets/storefront.png" alt="Fachada do Restaurante Chinês Rong Hua, em Oeiras, ao final do dia" style="object-fit: cover; width: 480px" />
+    <div class="fachada-scrim" aria-hidden="true"></div>
+    <div class="hero-copy">
+      <h1 class="hero-title reveal" style="font-size: 40px">Sabores Autênticos<br/>da China</h1>
+      <div class="hero-rule reveal d1" aria-hidden="true"></div>
+      <p class="tagline reveal d2">Tradição, qualidade e o verdadeiro sabor oriental no coração de Oeiras.</p>
+      <div class="hero-ctas reveal d3">
+        <a href="#takeaway" class="btn btn-order">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="6.5" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M3 6h4l2.2 9.5h7.2L20 9H8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Fazer Pedido
+        </a>
+        <a href="tel:+351214415668" class="btn btn-call">FAZER MARCAÇÃO</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ESPECIALIDADES ===================== -->
+  <section class="section section-cream" id="especialidades">
+    <div class="eyebrow reveal">A nossa cozinha</div>
+    <h2 class="reveal">Especialidades da Casa</h2>
+    <p class="lead reveal d1">Receitas de sempre, salteadas na hora no wok. Os pratos que fazem do Rong Hua um dos chineses preferidos de Oeiras.</p>
+
+    <div class="dish-grid">
+      <article class="dish feature reveal">
+        <div class="ph">
+          <span class="dish-tag">鱿鱼杂碎</span>
+          <image-slot id="d-chopsuey" shape="rect" placeholder="Foto — Chop Suey de Lulas"></image-slot>
+        </div>
+        <h3>Pato à Pequim
+
+01</h3>
+        <p>Prato tradicional chinês que consiste em pato assado, caracterizado pela sua pele caramelizada e crocante, acompanhado por panquecas finas, molho doce (hoisin) e vegetais crus.</p>
+      </article>
+
+      <article class="dish reveal d1">
+        <div class="ph">
+          <span class="dish-tag">腰果鸡</span>
+          <image-slot id="d-caju" shape="rect" placeholder="Foto — Galinha com Cajú"></image-slot>
+        </div>
+        <h3>Galinha com Cajú <span class="num">02</span></h3>
+        <p>Frango tenro salteado com cajú torrado e legumes, num molho suave e perfumado.</p>
+      </article>
+
+      <article class="dish reveal d2">
+        <div class="ph">
+          <span class="dish-tag">辣子鱿鱼</span>
+          <image-slot id="d-piripiri" shape="rect" placeholder="Foto — Lulas com Piri-Piri"></image-slot>
+        </div>
+        <h3>Lulas com Piri-Piri <span class="num">03</span></h3>
+        <p>Lulas estaladiças com o toque picante do piri-piri. Para quem gosta de sabores intensos.</p>
+      </article>
+
+      <article class="dish reveal d1">
+        <div class="ph">
+          <span class="dish-tag">菠萝鸡</span>
+          <image-slot id="d-ananas" shape="rect" placeholder="Foto — Galinha com Ananás"></image-slot>
+        </div>
+        <h3>Galinha com Ananás <span class="num">04</span></h3>
+        <p>Frango agridoce com ananás natural — o equilíbrio perfeito entre o doce e o salgado.</p>
+      </article>
+
+      <article class="dish reveal d2">
+        <div class="ph">
+          <span class="dish-tag">咖喱鸡</span>
+          <image-slot id="d-caril" shape="rect" placeholder="Foto — Caril de Galinha"></image-slot>
+        </div>
+        <h3>Caril de Galinha <span class="num">05</span></h3>
+        <p>Frango cozido lentamente num caril aromático e reconfortante.</p>
+      </article>
+
+      <article class="dish reveal d1">
+        <div class="ph">
+          <span class="dish-tag">杏仁鸡</span>
+          <image-slot id="d-amendoas" shape="rect" placeholder="Foto — Galinha com Amêndoas"></image-slot>
+        </div>
+        <h3>Galinha com Amêndoas <span class="num">06</span></h3>
+        <p>Pedaços de frango salteados com amêndoas torradas e um molho ligeiro.</p>
+      </article>
+
+      <article class="dish reveal d2">
+        <div class="ph">
+          <span class="dish-tag">蒜香鱿鱼</span>
+          <image-slot id="d-alho" shape="rect" placeholder="Foto — Lulas com Alho"></image-slot>
+        </div>
+        <h3>Lulas com Alho <span class="num">07</span></h3>
+        <p>Lulas grelhadas na chapa de ferro com alho dourado e fragrante.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== A NOSSA CASA ===================== -->
+  <section class="section section-dark casa" id="casa">
+    <div class="eyebrow reveal">A nossa casa</div>
+    <h2 class="reveal">Um cantinho da China em Oeiras</h2>
+    <p class="lead reveal d1">Há anos que recebemos famílias, amigos e vizinhos com a mesma promessa: cozinha chinesa autêntica, acolhedora e sem complicações. Ambiente informal, serviço rápido e simpático, preços acessíveis — o género de sítio a que se volta sempre.</p>
+    <p class="pull reveal d2">“Comida honesta, servida com <span class="accent">carinho</span> — como deve ser.”</p>
+    <div class="casa-photo reveal d1">
+      <image-slot id="casa-photo" shape="rect" placeholder="Foto — sala / ambiente do restaurante"></image-slot>
+    </div>
+    <div class="casa-stats">
+      <div class="stat reveal"><div class="n">4.2★</div><div class="l">no Google</div></div>
+      <div class="stat reveal d1"><div class="n">+1.300</div><div class="l">avaliações</div></div>
+      <div class="stat reveal d2"><div class="n">Anos</div><div class="l">a servir Oeiras</div></div>
+    </div>
+  </section>
+
+  <!-- ===================== AVALIAÇÕES ===================== -->
+  <section class="section section-cream" id="avaliacoes">
+    <div class="eyebrow reveal">O que dizem</div>
+    <h2 class="reveal">Avaliações</h2>
+    <div class="rating-head reveal d1">
+      <div class="rating-big">4.2</div>
+      <div>
+        <div class="stars" data-stars="4.2" aria-label="4,2 de 5 estrelas"></div>
+        <div class="rating-meta">Média de <strong>+1.300</strong> avaliações</div>
+        <div class="rating-source">
+          <svg viewBox="0 0 24 24" width="14" height="14"><path fill="#4285F4" d="M22.5 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.9a5 5 0 0 1-2.2 3.3v2.7h3.6c2.1-2 3.2-4.9 3.2-7.9z"/><path fill="#34A853" d="M12 23c2.9 0 5.4-1 7.2-2.6l-3.6-2.7c-1 .7-2.3 1.1-3.6 1.1-2.8 0-5.1-1.9-6-4.4H2.3v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M6 14.4a6.6 6.6 0 0 1 0-4.2V7.4H2.3a11 11 0 0 0 0 9.8L6 14.4z"/><path fill="#EA4335" d="M12 5.5c1.6 0 3 .5 4.1 1.6l3.1-3.1A11 11 0 0 0 2.3 7.4L6 10.2c.9-2.6 3.2-4.7 6-4.7z"/></svg>
+          avaliações verificadas no Google
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews">
+      <article class="review reveal d1">
+        <div class="stars" data-stars="5"></div>
+        <p class="review-text">Um dos melhores chineses da zona de Oeiras. As lulas com piri-piri são fantásticas e o atendimento é sempre muito simpático.</p>
+        <div class="review-who">
+          <span class="ava" style="background:var(--red)">M</span>
+          <div class="meta"><div class="nm">Marta Fernandes</div><div class="dt">Local Guide · há 2 semanas</div></div>
+        </div>
+      </article>
+
+      <article class="review reveal d2">
+        <div class="stars" data-stars="4"></div>
+        <p class="review-text">Comida saborosa e porções generosas a preços muito justos. Pedimos take-away quase todas as semanas.</p>
+        <div class="review-who">
+          <span class="ava" style="background:var(--jade)">J</span>
+          <div class="meta"><div class="nm">João Pereira</div><div class="dt">há 1 mês</div></div>
+        </div>
+      </article>
+
+      <article class="review wide reveal d1">
+        <div class="stars" data-stars="5"></div>
+        <p class="review-text">Fomos em grupo e correu lindamente — serviço rápido, mesa grande e pratos para partilhar. A galinha com cajú desapareceu num instante!</p>
+        <div class="review-who">
+          <span class="ava" style="background:var(--gold)">S</span>
+          <div class="meta"><div class="nm">Sofia Almeida</div><div class="dt">há 3 semanas</div></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== TAKE-AWAY ===================== -->
+  <section class="section takeaway" id="takeaway">
+    <div class="eyebrow reveal">Em casa ou no escritório</div>
+    <h2 class="reveal">Take-away &amp; Entregas</h2>
+    <p class="lead reveal d1">Os seus pratos preferidos prontos para levar ou entregues à porta. Rápido, quentinho e sempre fresco.</p>
+    <div class="ta-chips reveal d1">
+      <span class="ta-chip">Comer no local</span>
+      <span class="ta-chip">Take-away</span>
+      <span class="ta-chip">Entregas</span>
+      <span class="ta-chip">Aceita reservas</span>
+      <span class="ta-chip">Ideal para grupos</span>
+    </div>
+    <div class="ta-ctas reveal d2">
+      <a href="tel:+351214415668" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5c0 9 7 16 16 16l2.5-3.5-4.5-2-2 2c-3-1.5-5.5-4-7-7l2-2-2-4.5L3 5z" stroke-linejoin="round"/></svg>
+        Encomendar por telefone
+      </a>
+      <a href="#visite" class="btn btn-ghost">Ver morada &amp; horários</a>
+    </div>
+  </section>
+
+  <!-- ===================== VISITE-NOS ===================== -->
+  <section class="section section-cream" id="visite">
+    <div class="eyebrow reveal">Onde estamos</div>
+    <h2 class="reveal">Visite-nos</h2>
+    <p class="lead reveal d1">Bem no coração de Oeiras, com lugar para todos. Venha provar.</p>
+
+    <div class="visit-card reveal d1" id="reservar">
+      <div class="map-wrap">
+        <div class="map-skel" id="mapSkel">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div class="ms-addr">Av. Dr. Francisco Sá Carneiro 9B<br/>2780-241 Oeiras</div>
+          <a class="ms-link" href="https://maps.google.com/?q=Av.+Dr.+Francisco+S%C3%A1+Carneiro+9B,+2780+Oeiras" target="_blank" rel="noopener">Abrir no Google Maps →</a>
+        </div>
+        <iframe
+          title="Mapa — Restaurante Rong Hua, Oeiras"
+          loading="lazy"
+          src="https://maps.google.com/maps?q=Av.%20Dr.%20Francisco%20S%C3%A1%20Carneiro%209B%2C%202780%20Oeiras&z=16&output=embed"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="visit-body">
+        <div class="info-row">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div><div class="k">Morada</div><div class="v">Av. Dr. Francisco Sá Carneiro 9B<br/>2780-241 Oeiras</div></div>
+        </div>
+        <div class="info-row">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5c0 9 7 16 16 16l2.5-3.5-4.5-2-2 2c-3-1.5-5.5-4-7-7l2-2-2-4.5L3 5z" stroke-linejoin="round"/></svg></span>
+          <div><div class="k">Telefone</div><a class="v" href="tel:+351214415668">+351 21 441 5668</a></div>
+        </div>
+        <div class="info-row">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round"/></svg></span>
+          <div>
+            <div class="k">Horário <span class="confirm-tag">a confirmar</span></div>
+            <div class="hours-list">
+              <div class="hr-line"><span class="d">Segunda – Sexta</span><span>[a confirmar]</span></div>
+              <div class="hr-line"><span class="d">Sábado &amp; Domingo</span><span>[a confirmar]</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="visit-cta">
+        <a href="tel:+351214415668" class="btn btn-red">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 2v3M16 2v3M3.5 8.5h17M5 5h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg>
+          Reservar mesa
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="f-brand"><span class="hanzi">荣华</span><span class="word">Rong Hua</span></div>
+    <p class="f-tag">Cozinha chinesa autêntica em Oeiras.</p>
+
+    <div class="f-grid">
+      <div class="f-col">
+        <div class="k">Contactos</div>
+        <a class="f-line" href="tel:+351214415668">+351 21 441 5668</a>
+        <div class="f-line">Av. Dr. Francisco Sá Carneiro 9B</div>
+        <div class="f-line">2780-241 Oeiras, Portugal</div>
+      </div>
+      <div class="f-col">
+        <div class="k">Serviços</div>
+        <div class="f-line">Comer no local</div>
+        <div class="f-line">Take-away &amp; Entregas</div>
+        <div class="f-line">Reservas · Grupos</div>
+      </div>
+    </div>
+
+    <div class="f-socials">
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v7h3v-7H16l.5-3h-3V9.5c0-.3.2-.5.5-.5z"/></svg></a>
+      <a href="https://maps.google.com/?q=Restaurante+Rong+Hua+Oeiras" aria-label="Google Maps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></a>
+    </div>
+
+    <div class="f-bottom">
+      <span>© <span id="year"></span> Restaurante Rong Hua · Oeiras</span>
+      <span>Conceito de redesenho · proposta de website</span>
+    </div>
+  </footer>
+
+  <button class="totop" id="totop" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+</div>
+
+<!-- tweaks mount -->
+<div id="tweaks-root"></div>
+
+<script src="image-slot.js"></script>
+<script src="app.js"></script>
+
+<!-- React + Babel for the Tweaks panel only -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks-app.jsx"></script>
+
+</body>
+</html>
